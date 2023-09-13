@@ -56,9 +56,23 @@ let ans = "100";
 //ans = parseInt(ans)
 //ans  = +ans
 ans = Number(ans)
+
+
+
+// Convert the number to string
+
+//ans = ans.toString()
+ans = String(ans)
+
+// Convert the string to decimal
+ans = parseFloat(ans)
 console.log(ans, typeof ans)
 
 
-// Change the number to string
+//NAN ==> Not a Number
 
-ans = ans.toString()
+console.log(parseInt("Hello"));
+console.log(Math.sqrt(-1))
+console.log(undefined + undefined);
+console.log(1 + NaN);
+console.log("pavan"/100)
