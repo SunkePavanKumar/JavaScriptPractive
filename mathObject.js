@@ -9,7 +9,11 @@ console.log(Math.random())  // returns the random decimal from 0 to 1
 let y = Math.floor(Math.random()*10 +1)
 
 console.log(y)
-console.log(Math.floor(10.78))
+console.log(Math.floor(0.0001))
 
 // Math.min
 //Math.max
+
+
+// to generate the number 0 to 9
+
