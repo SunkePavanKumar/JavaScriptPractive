@@ -16,4 +16,4 @@ console.log(Math.floor(0.0001))
 
 
 // to generate the number 0 to 9
-
+console.log(Math.floor(0.322))

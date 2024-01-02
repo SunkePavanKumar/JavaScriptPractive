@@ -1,7 +1,23 @@
+// Understanding the promises
 
-const fact = (num)=>{
-    if(num ===0 || num ===1) return 1;
-    return num * fact(num-1)
+function evenOdd(num) {
+  return new Promise((resolve, reject) => {
+    if (!num || !typeof num !== Number) {
+      reject(`This is very bad ! give me the valid number`);
+    }
+    if (num % 2 === 0) {
+      resolve(`The num ${num} is even`);
+    } else {
+      resolve(`The num ${num} is odd`);
+    }
+  });
 }
 
-console.log(fact(5))
+(async function () {
+  try {
+    console.log(await evenOdd("Hello"));
+    console.log("Hello Welcome to the IMIVFN");
+  } catch (error) {
+    console.log(error);
+  }
+})();
